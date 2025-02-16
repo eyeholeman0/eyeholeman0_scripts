@@ -1,0 +1,1 @@
+start "E:\Program Files\ARMOURY CRATE.lnk"

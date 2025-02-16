@@ -1,0 +1,2 @@
+ADD NEW AUDIO TO FILE
+ffmpeg -i "Shrek.2001.1080p.BluRay.x264.YIFY.mp4" -i "glory_dub.mp3" -map 0:v -map 0:a -map 1:a -c:v copy -c:a aac -b:a 192k -metadata:s:a:0 language=eng -metadata:s:a:1 language=per "Shrek.2001.1080p.BluRay.x264.YIFY.dubbed.mp4"
