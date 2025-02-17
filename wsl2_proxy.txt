@@ -1,9 +1,10 @@
 SET
 
-echo 'export http_proxy="http://'"$(ip route | grep default | awk '{print $3}')"':10808"' >> ~/.bashrc
-echo 'export https_proxy="http://'"$(ip route | grep default | awk '{print $3}')"':10808"' >> ~/.bashrc
-echo 'export all_proxy="socks5://'"$(ip route | grep default | awk '{print $3}')"':10808"' >> ~/.bashrc
-source ~/.bashrc
+export WIN_HOST_IP=$(ip route | grep default | awk '{print $3}')
+
+export http_proxy="http://$WIN_HOST_IP:10808"
+export https_proxy="http://$WIN_HOST_IP:10808"
+export all_proxy="socks5://$WIN_HOST_IP:10808"
 
 REMOVE
 
