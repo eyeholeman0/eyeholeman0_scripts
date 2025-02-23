@@ -1,3 +1,5 @@
+# remove ms edge and revoke windows's access to the folder
+
 $EdgePath = "C:\Program Files (x86)\Microsoft"
 
 Remove-Item $EdgePath -Recurse -Force

@@ -1,3 +1,5 @@
+# generate batch download link for JDownloader
+
 base_link = input("base_link_($ instead of number): ")
 count = int(input("part_count: "))
 place_holder = int(input("place_holder: "))

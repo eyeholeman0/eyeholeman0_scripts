@@ -1,3 +1,5 @@
+/// Delete all tweets/replies 
+/// navigate to the tweets/replies page and run the script in browser console
 setInterval(() => {
     let carets = document.querySelectorAll('[data-testid="caret"]');
     let index = 0;
