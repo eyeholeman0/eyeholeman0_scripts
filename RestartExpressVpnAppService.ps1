@@ -9,8 +9,11 @@ if ($null -eq $service) {
 
 if ($service.Status -ne "Stopped") {
     Stop-Service -Name $serviceName -Force
-    Start-Sleep -Seconds 3
+    Start-Sleep -Seconds 1
 }
 
 Start-Service -Name $serviceName
-Write-Output "Service '$serviceName' restarted successfully."
+Write-Output "'$serviceName' restarted successfully."
+
+Start-Sleep -Seconds 1
+Start-Process -FilePath "C:\Program Files (x86)\ExpressVPN\expressvpn-ui\ExpressVPN.exe"
